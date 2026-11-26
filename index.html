@@ -14,6 +14,7 @@
 }
 [hidden]{display:none!important}
 html,body{height:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}  /* iOS Safari 會依段落長短自動放大字，報告版縮放後各頁字級不一 */
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:clamp(15px,1.05vw + 5px,21px);line-height:1.5;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
 .slide{min-height:calc(100% - 52px);box-sizing:border-box;padding-block:clamp(16px,3vh,36px) 64px;max-width:1500px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
@@ -16583,7 +16584,7 @@ z
 <nav class="bar" aria-label="Slides"><button id="prev" type="button" aria-label="Previous slide">←</button>
 <span class="pg"><span id="cur">1</span> / 9</span><button id="next" type="button" aria-label="Next slide">→</button>
 <button id="export" type="button" title="把所有頁的 Remarks 存成 .md 檔">Export remarks</button>
-<span class="ft">程明 · 2026-11-26 · built 2026-11-26 20:54</span></nav>
+<span class="ft">程明 · 2026-11-26 · built 2026-11-26 21:14</span></nav>
 <script>
 const IDS=["schedule", "hirata", "ismir", "oral-history", "oh-pair-net", "oh-pair-cloud", "japan", "hosono-net", "guitar"];
 const slides=[...document.querySelectorAll('.slide')];
